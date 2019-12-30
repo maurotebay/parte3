@@ -21,3 +21,32 @@ function ejercicio2(){
         console.log(frutas[index]);
     }
 }
+
+function ejercicio3(){
+    var frutas=["Banana", "Manzana", "Pera", "Naranja", "Mandarina"];
+    var sorted=frutas.sort();
+    console.log(sorted);
+    
+    frutas.push("Kiwi");
+    frutas.unshift("Uva");
+    console.log(frutas);
+
+    frutas.pop();
+    frutas.shift();
+    console.log(frutas);
+
+    var reversed=frutas.reverse();
+    console.log(reversed);
+
+    var c=0;
+    var concatenado = "";
+    while(c<frutas.length){
+        concatenado=concatenado.concat(frutas[c]);
+        c++;
+    }
+    console.log(concatenado);
+
+    for(var i=0; i<frutas.length; i++){
+        console.log(frutas[i].toUpperCase());
+    }
+}
