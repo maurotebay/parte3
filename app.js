@@ -50,3 +50,18 @@ function ejercicio3(){
         console.log(frutas[i].toUpperCase());
     }
 }
+
+function ejercicio4(){
+    var frase="La Manzana es Verde";
+    var fraseMin=frase.toLowerCase();
+    console.log(fraseMin);
+
+    var ult4=frase.substring(15);
+    console.log("Los ultimos 4 caracteres son: '" + ult4 + "'");
+
+    var frase345=frase.substring(3, 6);
+    console.log("Los caracteres 3, 4 y 5 de la frase son: '" + frase345 + "'");
+
+    var palabras=frase.split(" ");
+    console.log(palabras);
+}
