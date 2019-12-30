@@ -14,3 +14,10 @@ function ejercicio1(){
         alert("Incrementar en 1 unidad el valor de num1 lo hace mayor que num2");
     }
 }
+
+function ejercicio2(){
+    var frutas=["Banana", "Manzana", "Pera", "Naranja", "Mandarina"];
+    for(index in frutas){
+        console.log(frutas[index]);
+    }
+}
