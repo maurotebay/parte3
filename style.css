@@ -1,0 +1,18 @@
+.main {
+    width: 30%;
+    height: 60%;
+    margin: 5% auto;
+    text-align: center;
+    background-color: #000000;
+}
+
+h2 {
+    margin-top: 2%;
+    color: #fff;
+}
+
+button {
+    width: 100px;
+    height: 25px;
+    margin: 3% 20%;
+}
