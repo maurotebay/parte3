@@ -65,3 +65,10 @@ function ejercicio4(){
     var palabras=frase.split(" ");
     console.log(palabras);
 }
+
+function ejercicio5(){
+    var frase = new String();
+    prompt(frase);
+    frase[0]=frase.toUpperCase();
+    console.log(frase);
+}
