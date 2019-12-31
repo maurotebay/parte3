@@ -56,7 +56,7 @@ function ejercicio4(){
     var fraseMin=frase.toLowerCase();
     console.log(fraseMin);
 
-    var ult4=frase.substring(15);
+    var ult4=frase.substring(-4);
     console.log("Los ultimos 4 caracteres son: '" + ult4 + "'");
 
     var frase345=frase.substring(3, 6);
@@ -67,8 +67,6 @@ function ejercicio4(){
 }
 
 function ejercicio5(){
-    var frase = new String();
-    prompt(frase);
-    frase[0]=frase.toUpperCase();
-    console.log(frase);
+    var frase = prompt("Ingrese una frase:");
+    alert("Su frase con la primera letra en maysucula es: " + frase.charAt(0).toUpperCase() + frase.slice(1));
 }
