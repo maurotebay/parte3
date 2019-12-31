@@ -70,3 +70,15 @@ function ejercicio5(){
     var frase = prompt("Ingrese una frase:");
     alert("Su frase con la primera letra en maysucula es: " + frase.charAt(0).toUpperCase() + frase.slice(1));
 }
+
+function ejercicio6(){
+    var frase = prompt("Ingrese una frase: ");
+    var palabras = frase.split(" ");
+    var fraseDeseada="";
+    for(var i=0; i<palabras.length; i++){
+        palabras[i]=palabras[i].charAt(0).toUpperCase() + palabras[i].slice(1);
+        fraseDeseada= fraseDeseada + palabras[i] + " ";
+    }
+    var fraseFinal=fraseDeseada.substring(-1);
+    alert("La frase deseada es: " + fraseFinal);
+}
