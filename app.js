@@ -4,7 +4,7 @@ function ejercicio1(){
     if(!(num1>num2)) {
         alert("num1 no es mayor que num2");
     }
-    if(num2>0){
+    if(num2>=0){
         alert("num2 es positivo");
     }
     if(num1<0 || num1!=0) {
@@ -81,4 +81,29 @@ function ejercicio6(){
     }
     var fraseFinal=fraseDeseada.substring(-1);
     alert("La frase deseada es: " + fraseFinal);
+}
+
+function ejercicio7(){
+    var frase = prompt("Ingrese una frase: ");
+    var cv=0;
+    minus=frase.toLowerCase();
+    for(var i=0; i<minus.length; i++){
+        if(minus[i]=="a" ||minus[i]=="e" ||minus[i]=="i" ||minus[i]=="o" ||minus[i]=="u"){
+            cv++;
+        }
+    }
+    alert("La frase ingresada posee: " + cv + " vocales.");
+}
+
+function ejercicio8(){
+    function miFuncion(unNumero, unArray){
+        ++unNumero;
+        unArray.pop();
+    } 
+ 
+    var miNumero = 15;  
+    var miArray = ['Un texto', true, 4, 5]; 
+    miFuncion(miNumero, miArray);           //Al ejecutarse el codigo, miNumero tendra el valor de 15 y miArray no tendra el ultimo elemento
+    alert(miNumero);                        //es decir miArray=['Un texto', true, 4]
+    alert(miArray);
 }
